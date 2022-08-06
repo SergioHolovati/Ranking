@@ -1,0 +1,38 @@
+.tabs {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    color: #333333;
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 35rem;
+    padding: 5rem 0;
+
+    mat-tab-group {
+        min-width: 40rem;
+        box-shadow: 2px 2px 2px 2px;
+        ::ng-deep mat-tab-header {
+            display: grid !important;
+            justify-content: center !important;
+            background-color: #FFFFFF;
+        }
+
+        ::ng-deep .mat-tab-label-active{
+            color: red;
+        }
+
+        ::ng-deep .mat-ink-bar{
+            background-color:red;
+        }
+
+        ::ng-deep .mat-tab-body-wrapper{
+            height: 100%;
+        }
+        mat-tab-body {
+            width: 100%;
+            
+        }
+
+
+    }
+}

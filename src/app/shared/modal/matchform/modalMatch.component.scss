@@ -1,0 +1,38 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    color: #333333;
+    font-weight: 500;
+}
+
+label{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    justify-content: left;
+    color: #333333;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    background-image: none !important;
+    border-radius: 5px;
+    height: 20px;
+    outline: #666666;
+}
+
+p{text-align: left;}
+
+button{
+    border-radius: 5px;
+    color: #666666;
+    outline: 0;
+    cursor:pointer;
+    width: 10rem;
+    height: 2rem;
+}

@@ -1,0 +1,42 @@
+<section class="sample-app-content">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>
+            <label>Game:</label>
+            <input type="text" formControlName="game">
+
+        </p>
+
+
+
+        <mat-form-field appearance="fill">
+
+            <div>
+                <label>Winner:</label>
+                <mat-select formControlName="winner">
+                    <mat-option [value]="">Select an player</mat-option>
+                    <mat-option *ngFor="let player of players" value="{{player.id}}">{{player.name}}</mat-option>
+                </mat-select>
+            </div>
+
+
+        </mat-form-field>
+
+        <mat-form-field [formGroup]="form">
+            <div>
+                <label>Loser:</label>
+                <mat-select formControlName="loser">
+                    <mat-option [value]="">Select an player</mat-option>
+
+                    <mat-option *ngFor="let player of players" value="{{player.id}}">{{player.name}}</mat-option>
+                </mat-select>
+            </div>
+        </mat-form-field>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+
+
+</section>

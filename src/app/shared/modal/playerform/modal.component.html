@@ -1,0 +1,20 @@
+<section  class="sample-app-content">
+  <h1>Add Player:</h1>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <p>
+          <label>Full Name:</label>
+          <input type="text" formControlName="fullname">
+      </p>
+      <p>
+          <label>Age:</label>
+          <input type="text" formControlName="age">
+      </p>
+      <p>
+        <label>Gender:</label>
+        <input type="text" formControlName="gender">
+    </p>
+      <p>
+          <button type="submit" >Submit</button>
+      </p>
+  </form>
+</section>
